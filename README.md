@@ -1,4 +1,4 @@
-# Configuration for work Windows Subsystem for Linux
+# Configure Windows Subsystem for Linux
 ## openSUSE Tumbleweed
 
 Set up steps:
