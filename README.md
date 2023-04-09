@@ -9,4 +9,4 @@ Set up steps:
 4) Remove user password `sudo passwd -d $USER`
 5) Remove root password `sudo passwd -d root`
 6) Install oh-my-zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-7) Update with `sudo zypper update`
+7) Update with `sudo zypper dup`
