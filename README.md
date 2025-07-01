@@ -22,11 +22,18 @@
 8) Install oh-my-zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 9) Update with `sudo zypper dup`
 10) Restart `wsl --shutdown`
-
-### Optional
-
-- Enable systemd `sudo zypper in -t pattern wsl_systemd`
+11) (Optional) Enable systemd `sudo zypper in -t pattern wsl_systemd`
 
 ## Azure Linux
 
-TODO: https://aka.ms/wslazurelinux
+Install guide here: wslazurelinux
+
+### Set up steps:
+1) Install utils `sudo tdnf install git curl vim`
+2) Add current user to wheel group `sudo usermod -aG wheel $USER`
+3) Set visudo `sudo visudo` to allow wheel group without password and comment root password. Might need to close terminal, and open again.
+4) Remove user password `sudo passwd -d $USER`
+5) Remove root password `sudo passwd -d root`
+6) Close session
+7) Update with `sudo tdnf -y upgrade`
+8) Restart `wsl --shutdown`
